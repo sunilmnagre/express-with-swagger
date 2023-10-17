@@ -1,0 +1,63 @@
+{
+  "name": "inspyretek-backend",
+  "version": "1.0.0",
+  "description": "Backend application for ZeeTV",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "mocha --recursive --exit --timeout 10000",
+    "eslint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js ."
+  },
+  "pre-commit": [
+    "eslint",
+    "test"
+  ],
+  "dependencies": {
+    "@sanity/client": "^2.11.0",
+    "@sanity/schema": "^2.23.0",
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "csv-parse": "^4.15.4",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "firebase-admin": "^11.0.0",
+    "firebase-functions": "^4.1.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "jsend": "^1.1.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "moongose": "^1.0.0",
+    "nanoid": "^3.1.20",
+    "nodemailer": "^6.6.3",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "rand-token": "^1.0.1",
+    "serve-index": "^1.9.1",
+    "swagger-ui-express": "^4.1.4",
+    "validatorjs": "^3.22.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chai-sorted": "^0.2.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.6.0",
+    "eslint-config-formidable": "^4.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "faker": "^4.1.0",
+    "mocha": "^8.0.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.0.5",
+    "prettier-eslint": "^11.0.0"
+  }
+}
